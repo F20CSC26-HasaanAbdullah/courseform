@@ -40,13 +40,13 @@ export const Deleteform = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col items-center justify-center h-screen">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col items-center justify-center  h-screen">
                 <FormField
                     control={form.control}
                     name="Id"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Id</FormLabel>
+                            <FormLabel className="flex text-2xl font-serif text-center items-center justify-center">Id</FormLabel>
                             <FormControl>
                                 <Input placeholder="Enter your Id" className="border border-black w-[500px]" {...field} />
                             </FormControl>

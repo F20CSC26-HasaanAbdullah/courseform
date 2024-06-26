@@ -15,7 +15,7 @@ interface FormWrapperProps {
 
 export const FormWrapper = ({ children, title, description }: FormWrapperProps) => {
     return (
-        <Card className="flex flex-col mt-2 items-center justify-center w-screen h-screen">
+        <Card className="flex flex-col mt-5 items-center justify-center w-[800px] h-[800px]  border border-black">
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>
